@@ -1,18 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Odin Library</title>
     <style>
         h3 {
-           text-decoration-line: underline; 
+            text-decoration-line: underline;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
         }
     </style>
 </head>
+
 <body>
     <h3>my library</h3>
     <div class="library"></div>
+
+    <button class="new-book-button">add new book</button>
+    <div class="new-book-form" hidden>
+        <form id="new-book-form" action="">
+            <legend>add a new book to the library</legend>
+            <label for="book-title">
+                title:
+                <input type="text" name="book-title" id="book-title">
+            </label>
+            <label for="book-author">
+                author:
+                <input type="text" name="book-author" id="book-author">
+            </label>
+            <label for="num-of-pages">
+                num of pages:
+                <input type="text" name="num-of-pages" id="num-of-pages">
+            </label>
+            <button type="submit" class="submit-book-button">add book</button>
+        </form>
+    </div>
+
     <script src="script.js"></script>
 </body>
+
 </html>
