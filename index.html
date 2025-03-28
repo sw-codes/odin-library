@@ -13,20 +13,38 @@
         form {
             display: flex;
             flex-direction: column;
+            gap: 8px;
         }
 
         .new-book-div {
             display: flex;
             gap: 10px;
         }
+
+        .new-book-button {
+            height: fit-content;
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .submit-book-button {
+            width: fit-content;
+        }
     </style>
 </head>
 
 <body>
-    <h3>my library</h3>
+    <div class="header">
+        <h3>my library</h3>
+        <button class="new-book-button">add new book</button>
+    </div>
+    
     <div class="library"></div>
 
-    <button class="new-book-button">add new book</button>
     <div class="new-book-form" hidden>
         <form id="new-book-form" action="">
             <legend>add a new book to the library</legend>
